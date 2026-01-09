@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    font-family: "Google Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.nav {
+    position: fixed;
+    z-index: 111;
+    display: block;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 1% 0;
+    img{
+        width: 50px;
+        margin: 0 0 0 2%;
+        vertical-align: middle;
+    }
+    a{
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin: auto;
+        width: 13%;
+        margin-left: 2%;
+        padding: 1% 0;
+        
+    }
+}
+
+.cuerpo {
+    display: block;
+    height: 100vh;
+    top: -20%;
+    left: -15%;
+    position: fixed;
+    opacity: .3;
+
+    margin: auto;
+
+
+}
+.encabezados{
+    display: inline-block;
+    width: 50%;
+    color: white;
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    z-index: 222;
+    h1{
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(200, 200, 200);
+        border-style: solid;
+        padding: 4% 10%;
+        border-width: 1px;
+        border-radius: 5px;
+    }
+}
+.mensaje{
+    position: fixed;
+    background-color: rgb(20, 20, 20);
+    z-index: 333;
+    display: inline-block;
+    width: 30%;
+    padding: 1%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgb(50, 50, 50);
+    top: 40%;
+    left: 60%;
+    .imagen{
+              display: inline-block;
+                width: 25%;
+                vertical-align: middle;
+                padding: 3%;
+                
+    }
+    .msg{
+      display: inline-block;
+        
+                width: 60%;
+                vertical-align: middle;
+                
+                h2{
+                    color: white;
+                }
+                h3{
+                    color: rgb(200, 200, 200);
+                }
+                p{
+                    color: rgb(150, 150, 150);
+                    
+                }
+    }
+}
+
+@media (max-width:900px) {
+    
+    .nav{
+        img{
+            display: block;
+            margin: 0 0 0 45%;
+        }
+        a{
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .encabezados{
+        display: block;
+        width: 80%;
+        top: 40%;
+        h1{
+            font-size: 30px;
+        }
+    }
+    .mensaje{
+        display: block;
+        width: 80%;
+        left: 10%;
+        top: 60%;
+        h2{
+            font-size: 20px;
+
+        }
+        h3{
+            font-size: 15px;
+        }
+        p{
+           font-size: 10px;
+        }
+    }
+}
